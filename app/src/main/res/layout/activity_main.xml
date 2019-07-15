@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_dark"
+    tools:context="com.tudi.tudiapp.MainActivity">
+
+    <TextView
+        android:id="@+id/tudiLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Tudi"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="100dp"
+        android:textColor="@android:color/background_light"
+        android:textSize="36sp"
+        android:textStyle="normal|bold|italic"
+        android:typeface="serif" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tudiLogin"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/emailLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_corner1"
+            android:ems="10"
+            android:hint="Email address"
+            android:inputType="textEmailAddress"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/passLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/round_corner1"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="10dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/logInButton"
+        android:layout_marginTop="30px"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don't have an account?"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Sign up"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:id="@+id/signUpButton"
+            android:onClick="signUp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/logInButton"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearLayout1"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/button_round_corner1"
+        android:onClick="loginClick"
+        android:text="Log in "
+        android:textColor="@android:color/background_light" />
+
+
+</RelativeLayout>

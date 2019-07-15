@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "652168118656",
+    "firebase_url": "https://tudiapp2.firebaseio.com",
+    "project_id": "tudiapp2",
+    "storage_bucket": "tudiapp2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:652168118656:android:14de7b299fc515fe",
+        "android_client_info": {
+          "package_name": "com.tudi.tudiapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "652168118656-9ccqtaelol7rsjf1gg9nv4gd4hutq0qh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tudi.tudiapp",
+            "certificate_hash": "549b27f57e34d62807d214d86a4d19f26f80ee62"
+          }
+        },
+        {
+          "client_id": "652168118656-35hkb6hofj8bumgmh5to58autnpv8fd2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCW1zfBmXY2UKd2mj--9c0Df21C53x-Kdo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "652168118656-35hkb6hofj8bumgmh5to58autnpv8fd2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

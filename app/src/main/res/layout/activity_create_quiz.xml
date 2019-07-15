@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    tools:context=".CreateQuiz">
+
+    <View
+        android:id="@+id/top_background"
+        android:layout_width="match_parent"
+        android:layout_height="400px"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/holo_blue_dark" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout"
+        android:layout_centerVertical="true">
+
+        <EditText
+            android:id="@+id/question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Question"
+            android:inputType="text" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/answer"
+            android:inputType="text"
+            android:hint="Answer"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/choice1"
+            android:inputType="text"
+            android:hint="Choice 1"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/choice2"
+            android:inputType="text"
+            android:hint="Choice 2"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/choice3"
+            android:inputType="text"
+            android:hint="Choice 3"/>
+
+    </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/linearLayout"
+        android:layout_marginTop="40dp"
+        android:onClick="createQuiz"/>
+
+</RelativeLayout>

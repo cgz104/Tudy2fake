@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_dark"
+    tools:context=".SignUp">
+
+    <TextView
+        android:id="@+id/tudiSignUpTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Tudi"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="100dp"
+        android:textColor="@android:color/background_light"
+        android:textSize="36sp"
+        android:textStyle="normal|bold|italic"
+        android:typeface="serif" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_below="@+id/tudiSignUpTextView">
+
+        <EditText
+            android:id="@+id/userNameSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Username"
+            android:inputType="text"
+            android:background="@drawable/round_corner1"
+            android:ems="10"
+            android:padding="10dp" />
+
+
+        <EditText
+            android:id="@+id/emailSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/round_corner1"
+            android:ems="10"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/passwordSignUp"
+            android:inputType="text"
+            android:hint="Password"
+            android:background="@drawable/round_corner1"
+            android:ems="10"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"/>
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="?android:attr/borderlessButtonStyle"
+        android:text="Create"
+        android:id="@+id/tudiSignUp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/linearLayout"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:onClick="createAccount"
+        android:textColor="@android:color/background_light"
+        android:background="@drawable/button_round_corner1"/>
+
+</RelativeLayout>

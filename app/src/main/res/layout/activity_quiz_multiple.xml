@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E8E8E8"
+    tools:context=".QuizMultiple">
+
+    <View
+        android:id="@+id/top_background"
+        android:layout_width="match_parent"
+        android:layout_height="400px"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/holo_blue_dark" />
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="250px"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/questionNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:background="@drawable/round_corner_question_box1"
+                android:paddingBottom="15px"
+                android:paddingTop="20dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="15dp" />
+
+            <TextView
+                android:id="@+id/question"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_corner_question_box2"
+                android:paddingLeft="20dp"
+                android:paddingTop="15px"
+                android:paddingRight="15dp"
+                android:paddingBottom="20dp"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+
+
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/question"
+            android:layout_marginTop="25dp">
+
+            <RadioButton
+                android:id="@+id/radio_button1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:onClick="radio1"
+                android:padding="40px"
+                android:background="@drawable/round_corner1"/>
+            <RadioButton
+                android:id="@+id/radio_button2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="40px"
+                android:layout_marginBottom="12dp"
+                android:onClick="radio2"
+                android:background="@drawable/round_corner1"/>
+            <RadioButton
+                android:id="@+id/radio_button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="40px"
+                android:onClick="radio3"
+                android:background="@drawable/round_corner1"/>
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/button_confirm_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            android:layout_gravity="center"
+            android:onClick="next"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
